@@ -1,0 +1,89 @@
+img {
+    height: 250px;
+}
+h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+h2 {
+    color: $primary-color;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 42px;
+}
+h3 {
+    color: $primary-color;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 42px 80px;
+}
+h4 {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 3rem 0 0 3rem;
+    font-weight: 400;
+}
+section {
+    background: #000000;
+    border: 1px solid $primary-color-dark;
+}
+ul {
+    margin: 4rem;
+}
+li {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    margin-bottom: 4rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $primary-color-dark;
+}
+button {
+    background: $primary-color;
+    box-shadow: 4px 4px 4px rgba(214, 214, 214, 0.25);
+    border-radius: 5px;
+    padding: 1rem 7rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    margin: 3rem auto;
+}
+label {
+    font-size: 36px;
+    line-height: 42px;
+}
+form {
+    margin: 5vw;
+    div {
+        margin: 0 3rem;
+    }
+}
+span {
+    display: inline-block;
+    width: 350px;
+}
+input {
+    height: 24px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid $primary-color-dark;
+    a {
+        font-size: 2.5rem;
+        text-decoration: none;
+        padding: 2rem;
+        margin: 1rem;
+        &:hover {
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manos de Tijera</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+
+<body>
+    <section id="nav">
+        <nav>
+            <a href="#recordatorios">Recordatorios</a>
+            <a href="#turnos">Turnos</a>
+            <a href="#pedidos">Pedidos</a>
+            <a href="#materialesFaltantes">Materiales</a>
+            <a href="#productos">Productos</a>
+            <a href="#servicios">Servicios</a>
+        </nav>
+    </section>
+    <section id="home" class="column_center">
+        <h1>Manos de Tijera Peluquería</h1>
+        <div>
+            <img src="assets/logo_layla.png" alt="Logo Layla Soto">
+        </div>
+    </section>
+    <section id="recordatorios">
+        <h2>Recordatorios del día</h2>
+        <div class="container">
+            <ul id="listaRecordatorios">
+                <li class="alerta">
+                    <span class="highlight">Turno</span>
+                    Nombre Ficticio (@suContacto)
+                    <span class="data">Hoy 14 a 16hs</span>
+                </li>
+                <li class="alerta">
+                    <span class="highlight">Turno</span>
+                    Otro Nombre (@suContacto)
+                    <span class="data">Hoy 17hs</span>
+                </li>
+                <li class="alerta">
+                    <span class="highlight">Comprar</span>
+                    Shampoo neutro 5l
+                    <span class="data">Mercadolibre</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="turnos">
+        <h2>Turnos</h2>
+        <h3>Nuevo turno</h3>
+        <div class="container">
+            <form>
+                <div class="inputContainer">
+                    <label for="clientx">Clienta/e</label>
+                    <input type="text" name="clientx" id="clientx">
+                </div>
+                <div class="inputContainer">
+                    <label for="contacto">Contacto</label>
+                    <input type="text" name="contacto" id="contacto">
+                </div>
+                <div class="inputContainer">
+                    <label for="dia">Día</label>
+                    <input type="date" name="dia" id="dia">
+                </div>
+                <div class="inputContainer">
+                    <label for="hora">Horario</label>
+                    <input type="time" name="hora" id="hora">
+                </div><br>
+                <h4>Servicio/s:</h4>
+                <div class="checkboxContainer">
+                    <input type="checkbox" class="checkbox" id="corte" name="corte" value="corte">
+                    <label for="corte"> Corte</label><br>
+                    <input type="checkbox" class="checkbox" id="color" name="color" value="color">
+                    <label for="color"> Color</label><br>
+                    <input type="checkbox" class="checkbox" id="caute" name="caute" value="caute">
+                    <label for="caute"> Cauterizado</label><br>
+                    <input type="checkbox" class="checkbox" id="deco" name="deco" value="deco">
+                    <label for="deco"> Decoloración</label><br>
+                    <input type="checkbox" class="checkbox" id="retoque" name="retoque" value="retoque">
+                    <label for="retoque"> Retoque</label><br>
+                    <input type="checkbox" class="checkbox" id="arreglo" name="arreglo" value="arreglo">
+                    <label for="arreglo"> Arrreglo</label><br>
+                </div>
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        <h3>Todos los turnos</h3>
+        <div>
+            <iframe style="margin: 0 200px 100px 200px;"
+                src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=YWJyaWxnYXJjaWFkdXJhbkBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cXVhbGVzZ3JvdXAuY29tX2NsYXNzcm9vbTlkODI3NjkwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Zm9uZGF0aW9uZm9yZ2Uub3JnX2NsYXNzcm9vbTEyZjMzM2I0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23202124&amp;color=%23b80672&amp;color=%23009688&amp;showTitle=0&amp;showDate=1&amp;showCalendars=0&amp;showTz=0&amp;showPrint=0"
+                style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+    <section id="pedidos">
+        <h2>Pedidos</h2>
+        <h3>Nuevo Pedido</h3>
+        <div class="container"></div>
+        <h3>Todos los pedidos</h3>
+        <div class="container"></div>
+    </section>
+    <section id="materialFaltante">
+        <h2>Materiales</h2>
+        <h3>Nuevo material faltante</h3>
+        <div class="container">
+            <form method="post" class="formInline">
+                <div class="inputContainer">
+                    <label for="producto">Producto</label>
+                    <input type="text" name="producto" id="producto">
+                </div>
+                <div class="inputContainer">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="text" name="cantidad" id="cantidad">
+                </div>
+                <div class="inputContainer">
+                    <label for="vendedor">Vendedor/a</label>
+                    <input type="date" name="vendedor" id="vendedor">
+                </div>
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        <h3>Lista materiales faltantes</h3>
+        <div class="container">
+            <ul class="listaMaterialesFaltantes">
+                <li class="productoFaltante">
+                    <span class="highlight">Shampoo neutro</span> 5L <span class="data">(Mercadolibre)</span>
+                </li>
+                <li class="productoFaltante">
+                    <span class="highlight">Acondicionador neutro</span> 5L <span class="data">(Mercadolibre)</span>
+                </li>
+            </ul>
+        </div>
+        <h3>Preparando materiales</h3>
+        <div class="container">
+            <form method="post" class="formAgua formInline">
+                <div class="inputContainer">
+                    <label for="volumenes">Quiero agua del: (%)</label>
+                    <input type="text" name="volumenes" id="volumenes">
+                </div>
+                <div class="inputContainer">
+                    <label for="cantidadTengo">Tengo (ml) de agua 100%:</label>
+                    <input type="text" name="cantidadTengo" id="cantidadTengo">
+                </div>
+                <button type="submit">Caluclar</button>
+            </form>
+            <form method="POST" class="formAgua formInline">
+                <div class="inputContainer">
+                    <label for="volumenes2">Quiero agua del: (%)</label>
+                    <input type="text" name="volumenes2" id="volumenes2">
+                </div>
+                <div class="inputContainer">
+                    <label for="cantidadQuiero">Quiero un total de (ml): </label>
+                    <input type="text" name="cantidadQuiero" id="cantidadQuiero">
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+    </section>
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="container"></div>
+    </section>
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="container"></div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
